@@ -3,7 +3,7 @@
 A simple personal portfolio website built using **React.js**, **Tailwind CSS**, **AOS (Animate on Scroll)**, and **EmailJS** integration.  
 This is my **first React project**, so I have kept the design and functionality simple while focusing on learning React basics, component structuring, and state management.
 
-🔗 **Live Demo:** [View Portfolio](https://your-demo-link.com)
+🔗 **Live Demo:** [View Portfolio](https://my-portfolio-i.netlify.app/)
 
 ---
 
