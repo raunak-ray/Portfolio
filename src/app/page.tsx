@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 
 function page() {
@@ -5,7 +6,7 @@ function page() {
     <div className="flex flex-col">
       
       <Hero />
-      
+      <About />
     </div>
   );
 }

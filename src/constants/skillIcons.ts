@@ -1,0 +1,37 @@
+import { DiJava, DiVisualstudio } from "react-icons/di";
+import {
+    SiReact,
+    SiNextdotjs,
+    SiTailwindcss,
+    SiNodedotjs,
+    SiExpress,
+    SiPostgresql,
+    SiMongodb,
+    SiJavascript,
+    SiTypescript,
+    SiPython,
+    SiC,
+    SiGit,
+    SiPostman,
+    SiDrizzle,
+  } from "react-icons/si";
+  
+  export const skillIcons: Record<string, any> = {
+    "React.js": SiReact,
+    "Next.js": SiNextdotjs,
+    "Tailwind CSS": SiTailwindcss,
+    "Node.js": SiNodedotjs,
+    "Express.js": SiExpress,
+    "PostgreSQL": SiPostgresql,
+    "MongoDB": SiMongodb,
+    JavaScript: SiJavascript,
+    TypeScript: SiTypescript,
+    Python: SiPython,
+    Java: DiJava,
+    C: SiC,
+    Git: SiGit,
+    Postman: SiPostman,
+    "VS Code": DiVisualstudio,
+    "Drizzle ORM": SiDrizzle,
+    Mongoose: SiMongodb
+  };
