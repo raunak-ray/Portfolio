@@ -27,7 +27,25 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+      {/* 🌤 Background Image */}
+        <div className="fixed inset-0 -z-10">
+          <img
+            src="/cloud_bg.png"
+            alt="background"
+            className="w-full h-full object-fill"
+          />
+
+          {/* Overlay for readability */}
+          <div className="absolute inset-0 bg-white/30 backdrop-blur-[2px]" />
+        </div>
+        
+        {/* Main Content */}
+        <main className="relative z-10">
+          {children}
+        </main>
+
+      </body>
     </html>
   );
 }
