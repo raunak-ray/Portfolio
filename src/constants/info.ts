@@ -8,12 +8,12 @@ export const personalInfo = {
   avatar: "/images/profile/raunak.png",
   social: {
     github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername"
-  }
+    linkedin: "https://linkedin.com/in/yourusername",
+  },
 };
 
 export const summary = {
-  text: "I build modern full-stack applications with a strong focus on performance, clean architecture, and user experience. I enjoy creating tools that solve real-world problems while maintaining simplicity and scalability."
+  text: "I build modern full-stack applications with a strong focus on performance, clean architecture, and user experience. I enjoy creating tools that solve real-world problems while maintaining simplicity and scalability.",
 };
 
 export const skills = {
@@ -22,7 +22,7 @@ export const skills = {
   backend: ["Node.js", "Express.js"],
   databases: ["PostgreSQL", "MongoDB"],
   tools: ["Git", "Postman", "VS Code"],
-  orm: ["Drizzle ORM", "Mongoose"]
+  orm: ["Drizzle ORM", "Mongoose"],
 };
 
 export const experience = [
@@ -34,8 +34,8 @@ export const experience = [
     icon: "/images/experience/ston.png",
     highlights: [
       "Built a mentor dashboard that streamlined workflows and improved data accessibility",
-      "Developed a resume builder with automated PDF generation, significantly reducing manual effort"
-    ]
+      "Developed a resume builder with automated PDF generation, significantly reducing manual effort",
+    ],
   },
   {
     id: "renote",
@@ -45,9 +45,9 @@ export const experience = [
     icon: "/images/experience/renote.png",
     highlights: [
       "Redesigned the landing page into a modern SaaS-style interface",
-      "Improved engagement using smooth animations and better UX structure"
-    ]
-  }
+      "Improved engagement using smooth animations and better UX structure",
+    ],
+  },
 ];
 
 export const projects = [
@@ -65,8 +65,8 @@ export const projects = [
       "Merge, split, reorder, and edit PDFs seamlessly",
       "Drag-and-drop interface for intuitive workflows",
       "Optimized for handling large files smoothly",
-      "Zero server dependency for maximum privacy"
-    ]
+      "Zero server dependency for maximum privacy",
+    ],
   },
   {
     id: "library-os",
@@ -75,21 +75,15 @@ export const projects = [
     image: "/images/projects/library.png",
     liveUrl: "",
     githubUrl: "",
-    tech: [
-      "Next.js",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "Redis"
-    ],
+    tech: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "Redis"],
     description:
       "A full-stack system designed to manage library operations efficiently with secure authentication, role-based access, and optimized backend performance.",
     highlights: [
       "Role-based system for Admin, Librarian, and Students",
       "Fast APIs with Redis caching",
       "Secure authentication using JWT and cookies",
-      "Clean and intuitive dashboard interface"
-    ]
+      "Clean and intuitive dashboard interface",
+    ],
   },
   {
     id: "readmegen",
@@ -105,9 +99,9 @@ export const projects = [
       "Real-time markdown preview",
       "Template-based generation",
       "Easy customization for developers",
-      "Helps improve GitHub profile presentation"
-    ]
-  }
+      "Helps improve GitHub profile presentation",
+    ],
+  },
 ];
 
 export const education = [
@@ -117,7 +111,7 @@ export const education = [
     duration: "2023 – 2027",
     location: "Kolkata, India",
     score: "CGPA: 7.93",
-    icon: "/images/education/college.png"
+    icon: "/images/education/college.png",
   },
   {
     degree: "Higher Secondary (PCM)",
@@ -125,25 +119,26 @@ export const education = [
     duration: "2023",
     location: "Kolkata, India",
     score: "74.5%",
-    icon: "/images/education/school.png"
-  }
+    icon: "/images/education/school.png",
+  },
 ];
 
 export const contact = {
   title: "Let’s build something meaningful",
-  description: "Open to opportunities, collaborations, and interesting projects.",
+  description:
+    "Open to opportunities, collaborations, and interesting projects.",
   email: "raunakray3260@gmail.com",
   phone: "8981968505",
   socials: [
     {
       name: "GitHub",
       url: "https://github.com/yourusername",
-      icon: "/icons/github.svg"
+      icon: "/icons/github.svg",
     },
     {
       name: "LinkedIn",
       url: "https://linkedin.com/in/yourusername",
-      icon: "/icons/linkedin.svg"
-    }
-  ]
+      icon: "/icons/linkedin.svg",
+    },
+  ],
 };
