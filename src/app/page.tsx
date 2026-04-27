@@ -1,10 +1,11 @@
-import React from "react";
+import Hero from "@/components/Hero";
 
 function page() {
   return (
-    <div className="">
-      Hello
-      <div className="h-5000" id=""></div>
+    <div className="flex flex-col">
+      
+      <Hero />
+      
     </div>
   );
 }
