@@ -15,7 +15,7 @@ function Navbar() {
   const [active, setActive] = useState("home");
   const [open, setOpen] = useState(false);
 
-  // 🔥 Better scroll tracking
+  // Better scroll tracking
   useEffect(() => {
     const handleScroll = () => {
       let current = "home";
@@ -40,6 +40,19 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleScrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (!element) return;
+
+    const offset = 100; // adjust based on navbar height
+    const top = element.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+      top,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="fixed top-0 z-50 w-full px-4">
       <div className="max-w-xl mx-auto">
@@ -55,9 +68,9 @@ function Navbar() {
               const isActive = active === nav.id;
 
               return (
-                <a
+                <button
+                  onClick={() => handleScrollTo(nav.id)}
                   key={nav.id}
-                  href={`#${nav.id}`}
                   className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-all duration-300
                     ${
                       isActive
@@ -67,7 +80,7 @@ function Navbar() {
                 >
                   <Icon size={16} />
                   {nav.name}
-                </a>
+                </button>
               );
             })}
           </div>
@@ -89,10 +102,12 @@ function Navbar() {
               const isActive = active === nav.id;
 
               return (
-                <a
+                <button
+                  onClick={() => {
+                    handleScrollTo(nav.id);
+                    setOpen(false);
+                  }}
                   key={nav.id}
-                  href={`#${nav.id}`}
-                  onClick={() => setOpen(false)}
                   className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm transition
                     ${
                       isActive ? "bg-black/10 text-black" : "hover:bg-black/5"
@@ -100,7 +115,7 @@ function Navbar() {
                 >
                   <Icon size={18} />
                   {nav.name}
-                </a>
+                </button>
               );
             })}
           </div>
