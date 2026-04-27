@@ -10,7 +10,6 @@ function Hero() {
       className="mt-24 md:mt-0 min-h-screen flex items-center justify-center px-6 md:px-10"
     >
       <div className="max-w-5xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
-        
         {/* LEFT */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -18,9 +17,7 @@ function Hero() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex-1 space-y-4 text-center md:text-left"
         >
-          <p className="text-sm text-gray-500">
-            👋 Hello, I'm
-          </p>
+          <p className="text-sm text-gray-500">👋 Hello, I'm</p>
 
           <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.1]">
             {personalInfo.name}
@@ -30,13 +27,10 @@ function Hero() {
             {personalInfo.title}
           </h2>
 
-          <p className="text-gray-500 max-w-lg">
-            {personalInfo.tagline}
-          </p>
+          <p className="text-gray-500 max-w-lg">{personalInfo.tagline}</p>
 
           {/* CTA */}
           <div className="flex gap-4 justify-center md:justify-start pt-2">
-            
             {/* PRIMARY BUTTON */}
             <a
               href="#projects"
@@ -65,7 +59,6 @@ function Hero() {
           className="flex-1 flex justify-center md:justify-end"
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80">
-            
             {/* Accent Glow */}
             <div className="absolute inset-0 rounded-2xl bg-blue-400/30 blur-2xl" />
 
@@ -76,7 +69,6 @@ function Hero() {
             />
           </div>
         </motion.div>
-
       </div>
     </section>
   );

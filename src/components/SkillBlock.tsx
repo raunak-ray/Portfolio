@@ -6,7 +6,6 @@ import { skillIcons } from "@/constants/skillIcons";
 function SkillBlock({ title, items }: { title: string; items: string[] }) {
   return (
     <Card className="bg-white/50 backdrop-blur-xl border border-white/30 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-      
       <CardHeader>
         <CardTitle className="text-base font-semibold text-gray-800">
           {title}
@@ -15,7 +14,6 @@ function SkillBlock({ title, items }: { title: string; items: string[] }) {
 
       <CardContent>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-          
           {items.map((item) => {
             const Icon = skillIcons[item];
 
@@ -38,7 +36,6 @@ function SkillBlock({ title, items }: { title: string; items: string[] }) {
               </div>
             );
           })}
-
         </div>
       </CardContent>
     </Card>

@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  Briefcase,
-  Compass,
-  Home,
-  User,
-  Menu,
-  X,
-  Mail,
-} from "lucide-react";
+import { Briefcase, Compass, Home, User, Menu, X, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -50,16 +42,11 @@ function Navbar() {
 
   return (
     <div className="fixed top-0 z-50 w-full px-4">
-      
       <div className="max-w-xl mx-auto">
-        
         {/* NAVBAR */}
         <nav className="mt-4 bg-white/40 backdrop-blur-md border border-white/30 rounded-full px-4 py-3 shadow-md flex items-center justify-between md:justify-center">
-          
           {/* MOBILE LEFT */}
-          <div className="md:hidden text-sm font-medium">
-            Raunak
-          </div>
+          <div className="md:hidden text-sm font-medium">Raunak</div>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex gap-2 items-center">
@@ -97,7 +84,6 @@ function Navbar() {
         {/* MOBILE MENU */}
         {open && (
           <div className="md:hidden mt-3 bg-white/80 backdrop-blur-md border border-white/30 rounded-2xl p-4 shadow-lg flex flex-col gap-2">
-            
             {navLinks.map((nav) => {
               const Icon = nav.icon;
               const isActive = active === nav.id;
@@ -109,9 +95,7 @@ function Navbar() {
                   onClick={() => setOpen(false)}
                   className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm transition
                     ${
-                      isActive
-                        ? "bg-black/10 text-black"
-                        : "hover:bg-black/5"
+                      isActive ? "bg-black/10 text-black" : "hover:bg-black/5"
                     }`}
                 >
                   <Icon size={18} />
@@ -119,10 +103,8 @@ function Navbar() {
                 </a>
               );
             })}
-
           </div>
         )}
-
       </div>
     </div>
   );

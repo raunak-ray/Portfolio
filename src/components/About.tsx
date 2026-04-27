@@ -7,9 +7,7 @@ import SkillBlock from "./SkillBlock";
 function About() {
   return (
     <section id="about" className="py-28 px-6 md:px-10">
-      
       <div className="max-w-5xl mx-auto space-y-20">
-        
         {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,9 +18,7 @@ function About() {
             About <span className="text-blue-600">Me</span>
           </h2>
 
-          <p className="text-gray-600 mt-5 leading-relaxed">
-            {summary.text}
-          </p>
+          <p className="text-gray-600 mt-5 leading-relaxed">{summary.text}</p>
         </motion.div>
 
         {/* SKILLS GRID */}
@@ -34,7 +30,6 @@ function About() {
           <SkillBlock title="Tools" items={skills.tools} />
           <SkillBlock title="ORM" items={skills.orm} />
         </div>
-
       </div>
     </section>
   );
