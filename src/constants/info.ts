@@ -1,3 +1,6 @@
+import { DiGithub } from "react-icons/di";
+import { LiaLinkedin } from "react-icons/lia";
+
 export const personalInfo = {
   name: "Raunak Ray",
   title: "Full-Stack Developer",
@@ -102,15 +105,23 @@ export const education = [
     duration: "2023 – 2027",
     location: "Kolkata, India",
     score: "CGPA: 7.93",
-    icon: "/images/education/college.png",
+    icon: "/college.png",
   },
   {
-    degree: "Higher Secondary (PCM)",
+    degree: "Class XII (Higher Secondary - PCM)",
     institution: "Shree Jain Vidyalaya",
     duration: "2023",
     location: "Kolkata, India",
     score: "74.5%",
-    icon: "/images/education/school.png",
+    icon: "/school.png",
+  },
+  {
+    degree: "Class X (Secondary Education)",
+    institution: "Shree Jain Vidyalaya",
+    duration: "2021",
+    location: "Kolkata, India",
+    score: "87.86%",
+    icon: "/school.png",
   },
 ];
 
@@ -119,17 +130,16 @@ export const contact = {
   description:
     "Open to opportunities, collaborations, and interesting projects.",
   email: "raunakray3260@gmail.com",
-  phone: "8981968505",
   socials: [
     {
       name: "GitHub",
       url: "https://github.com/yourusername",
-      icon: "/icons/github.svg",
+      icon: DiGithub,
     },
     {
       name: "LinkedIn",
       url: "https://linkedin.com/in/yourusername",
-      icon: "/icons/linkedin.svg",
+      icon: LiaLinkedin,
     },
   ],
 };
