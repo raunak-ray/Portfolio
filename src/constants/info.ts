@@ -50,8 +50,8 @@ export const projects = [
     title: "PDFKit",
     tagline: "Privacy-first PDF toolkit that runs entirely in the browser",
     image: "/pdfkit.png",
-    liveUrl: "he",
-    githubUrl: "he",
+    liveUrl: "https://pdf-toolbox-six.vercel.app/",
+    githubUrl: "https://github.com/raunak-ray/PDFKit",
     tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
     description:
       "A fast and secure PDF toolkit that performs advanced operations directly in the browser without uploading files, ensuring complete privacy.",
@@ -67,8 +67,8 @@ export const projects = [
     title: "Library OS",
     tagline: "A scalable library management system with role-based access",
     image: "/library.png",
-    liveUrl: "eh",
-    githubUrl: "he",
+    liveUrl: "https://library-management-system-six-rust.vercel.app/",
+    githubUrl: "https://github.com/raunak-ray/Library-Management-System",
     tech: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "Redis"],
     description:
       "A full-stack system designed to manage library operations efficiently with secure authentication, role-based access, and optimized backend performance.",
@@ -84,8 +84,8 @@ export const projects = [
     title: "ReadmeGen",
     tagline: "Generate professional GitHub profiles in seconds",
     image: "/readmegen.png",
-    liveUrl: "he",
-    githubUrl: "he",
+    liveUrl: "https://readme-gen-psi.vercel.app",
+    githubUrl: "https://github.com/raunak-ray/ReadmeGen",
     tech: ["React", "Tailwind CSS", "react-markdown"],
     description:
       "A simple and effective tool that helps developers create clean, professional GitHub profile READMEs with live preview and customization.",
@@ -133,12 +133,12 @@ export const contact = {
   socials: [
     {
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/raunak-ray",
       icon: DiGithub,
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/raunak-ray-770a0b387/",
       icon: LiaLinkedin,
     },
   ],
