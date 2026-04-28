@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, Compass, Home, User, Menu, X, Mail } from "lucide-react";
+import { Briefcase, Compass, Home, User, Menu, X, Mail, School } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -8,6 +8,7 @@ const navLinks = [
   { name: "About", icon: User, id: "about" },
   { name: "Projects", icon: Briefcase, id: "projects" },
   { name: "Experience", icon: Compass, id: "experience" },
+  { name: "Education", icon: School, id: "education" },
   { name: "Contact", icon: Mail, id: "contact" },
 ];
 
@@ -55,7 +56,7 @@ function Navbar() {
 
   return (
     <div className="fixed top-0 z-50 w-full px-4">
-      <div className="max-w-xl mx-auto">
+      <div className="max-w-2xl mx-auto">
         {/* NAVBAR */}
         <nav className="mt-4 bg-white/40 backdrop-blur-md border border-white/30 rounded-full px-4 py-3 shadow-md flex items-center justify-between md:justify-center">
           {/* MOBILE LEFT */}

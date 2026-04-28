@@ -31,21 +31,12 @@ export const experience = [
     role: "Software Development Engineer (Intern)",
     company: "Ston Technology",
     duration: "Apr 2026 – Present",
-    icon: "/images/experience/ston.png",
+    icon: "/ston.png",
     highlights: [
-      "Built a mentor dashboard that streamlined workflows and improved data accessibility",
-      "Developed a resume builder with automated PDF generation, significantly reducing manual effort",
-    ],
-  },
-  {
-    id: "renote",
-    role: "Frontend Developer",
-    company: "Renote",
-    duration: "",
-    icon: "/images/experience/renote.png",
-    highlights: [
+      "Built a mentor dashboard to streamline workflows and improve data accessibility",
+      "Developed a resume builder with automated PDF generation, reducing manual effort",
       "Redesigned the landing page into a modern SaaS-style interface",
-      "Improved engagement using smooth animations and better UX structure",
+      "Enhanced user engagement through smooth animations and improved UX structure",
     ],
   },
 ];
